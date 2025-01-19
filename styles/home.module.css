@@ -1,0 +1,125 @@
+.heroSection {
+  width: 100%;
+  padding: 3rem 0;
+  background-color: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+/* CSS */
+.highlight-button {
+  font-size: 1.5rem; /* Larger text */
+  padding: 1rem 2rem; /* More space inside the button */
+  border: 2px solid #fff; /* Optional: Add a border for emphasis */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+
+.heroSubtitle {
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 1rem;
+}
+
+.section {
+  width: 100%;
+  padding: 4rem 0;
+}
+
+.sectionTitle {
+  font-size: 1.875rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .grid2Cols {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .grid3Cols {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.profileImage {
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.aboutContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.aboutTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.aboutText {
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
+
+.timeline {
+  position: relative;
+  border-left: 2px solid hsl(var(--border));
+  padding-left: 1.5rem;
+}
+
+.timelineItem {
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.timelineItem::before {
+  content: '';
+  position: absolute;
+  left: -1.65rem;
+  top: 0.25rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background-color: hsl(var(--muted));
+  border: 2px solid hsl(var(--background));
+}
+
+.timelineDate {
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+  margin-bottom: 0.25rem;
+}
+
+.timelineTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+

@@ -1,0 +1,168 @@
+.section {
+  width: 100%;
+  padding: 3rem 0;
+  background: #fafafa; /* Light gray background for better contrast */
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #000000;
+  letter-spacing: -0.025em;
+}
+
+.content {
+  max-width: 56rem; /* Slightly wider for better layout */
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.card {
+  border: none; /* Remove border for modern look */
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 
+              0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  background: white;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  margin-bottom: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 0.75rem;
+}
+
+/* Project cards specific styling */
+.project-card {
+  display: grid;
+  gap: 1rem;
+}
+
+.project-title {
+  color: #4a5568;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.project-description {
+  color: #718096;
+  line-height: 1.6;
+}
+
+/* Education section */
+.education-details {
+  color: #4a5568;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.date {
+  color: #718096;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* List styling */
+.list ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: #4a5568;
+}
+
+.list ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #4299e1; /* Blue bullet points */
+}
+
+/* Download button styling */
+.download-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #4299e1;
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  margin-bottom: 2rem;
+}
+
+.download-btn:hover {
+  background: #3182ce;
+  transform: translateY(-1px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section {
+    padding: 2rem 0;
+  }
+
+  .title {
+    font-size: 2rem;
+    color: #000000;
+  }
+
+  .content {
+    padding: 0 1.25rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .section {
+    background: white;
+  }
+
+  .card {
+    background: #2d3748;
+  }
+
+  .title,
+  .card-title,
+  .project-title {
+    color: #000000;
+  }
+
+  .project-description,
+  .education-details,
+  .list ul li {
+    color: #e2e8f0;
+  }
+
+  .date {
+    color: #a0aec0;
+  }
+}
