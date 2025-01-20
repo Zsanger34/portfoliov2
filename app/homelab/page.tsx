@@ -1,6 +1,5 @@
-import Image from 'next/image'
-import styles from './homelab.module.css'
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+import styles from './homelab.module.css';
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 
 export default function Homelab() {
   return (
@@ -27,7 +26,6 @@ export default function Homelab() {
                     <li>Custom pfSense router for advanced networking features</li>
                   </ul>
                 </div>
-                {/* <Image src="/placeholder.svg?height=300&width=400" width={400} height={300} alt="Homelab Setup" className={styles.image} /> */}
               </div>
             </CardContent>
           </Card>
@@ -42,7 +40,6 @@ export default function Homelab() {
             </CardHeader>
             <CardContent>
               <div className={`${styles.grid} ${styles.grid2Cols}`}>
-                {/* <Image src="/placeholder.svg?height=300&width=400" width={400} height={300} alt="Network Diagram" className={styles.image} /> */}
                 <div>
                   <p className={styles.mb4}>
                     My homelab network is designed for security, flexibility, and ease of management:
@@ -69,7 +66,7 @@ export default function Homelab() {
             </CardHeader>
             <CardContent>
               <p className={styles.mb4}>
-                My homelab serves as a practical learning environment. Here are some of the projects I've worked on:
+                My homelab serves as a practical learning environment. Here are some of the projects I&apos;ve worked on:
               </p>
               <ul className={styles.list}>
                 <li>Kubernetes cluster for container orchestration</li>
@@ -87,7 +84,7 @@ export default function Homelab() {
         <div className={styles.container}>
           <Card className={styles.card}>
             <CardHeader>
-              <CardTitle>What I'm Hosting</CardTitle>
+              <CardTitle>What I&apos;m Hosting</CardTitle>
             </CardHeader>
             <CardContent>
               <p className={styles.mb4}>
@@ -118,6 +115,5 @@ export default function Homelab() {
         </div>
       </section>
     </>
-  )
+  );
 }
-

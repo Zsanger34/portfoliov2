@@ -1,0 +1,12 @@
+name = "portfolio-v2" # Name of your project
+main = "./dist/index.js" # Path to your compiled script
+compatibility_date = "2025-01-19" # Today's date
+
+account_id = "d82ed0451c2e4f9da848deb44e854b34" # Replace with your account ID
+workers_dev = true # Deploy to a workers.dev subdomain
+type = "javascript" # Type of project
+
+[build]
+command = "npm run build" # Command to build your project
+upload_format = "modules"
+upload_dir = "dist" # Path to the output directory

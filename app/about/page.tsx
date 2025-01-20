@@ -1,8 +1,8 @@
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
-import InteractiveElement from '../../components/InteractiveElement'
-import Image from 'next/image'
-import styles from './about.module.css'
-import photo from '@/public/4DEA37D4-E0F1-42C4-8DCC-E8E6244C7652.jpg'
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
+import InteractiveElement from '../../components/InteractiveElement';
+import Image from 'next/image';
+import styles from './about.module.css';
+import photo from '@/public/4DEA37D4-E0F1-42C4-8DCC-E8E6244C7652.jpg';
 
 export default function About() {
   return (
@@ -11,27 +11,26 @@ export default function About() {
         <div className="container">
           <div className={`${styles.grid} ${styles.grid2Cols}`}>
             <div>
-            <Image
-              src={photo}
-              alt="Your Name"
-              className={styles.profileImage}
-              layout="responsive"
-              width={200}
-              height={200}
-            />
+              <Image
+                src={photo}
+                alt="Your Name"
+                className={styles.profileImage}
+                layout="responsive"
+                width={200}
+                height={200}
+              />
             </div>
             <div className={styles.aboutContent}>
               <h1 className={styles.title}>About Me</h1>
               <p className={styles.aboutText}>
-                Hi there! I'm Zachary Sanger, a passionate Software Developer with a love for technology and innovation. 
-                My journey in the tech world began when I was younger when I used to take apart computer to try and learn how they work,
-                and since then, I've been on an exciting adventure 
-                of continuous learning and growth.
+                Hi there! I&apos;m Zachary Sanger, a passionate Software Developer with a love for technology and innovation. 
+                My journey in the tech world began when I was younger, taking apart computers to learn how they work, 
+                and since then, I&apos;ve been on an exciting adventure of continuous learning and growth.
               </p>
               <p className={styles.aboutText}>
-                When I'm not coding or tinkering with my homelab, you can find me Snowboarding, Cooking, Or Lifting. 
-                I believe in the power of thinking 3 moves ahead, and I'm always eager to take on 
-                new challenges and push the boundaries of what's possible.
+                When I&apos;m not coding or tinkering with my homelab, you can find me snowboarding, cooking, or lifting. 
+                I believe in the power of thinking three moves ahead, and I&apos;m always eager to take on 
+                new challenges and push the boundaries of what&apos;s possible.
               </p>
             </div>
           </div>
@@ -92,7 +91,7 @@ export default function About() {
             <CardContent className="pt-6">
               <p className={styles.aboutText}>
                 Did you know? I once [interesting anecdote or achievement]. This experience taught me [lesson learned], 
-                which I've applied to my professional life in [specific way].
+                which I&apos;ve applied to my professional life in [specific way].
               </p>
               <InteractiveElement />
             </CardContent>
@@ -100,6 +99,5 @@ export default function About() {
         </div>
       </section>
     </>
-  )
+  );
 }
-
