@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import Image from 'next/image';
+
 import styles from '@/styles/home.module.css';
-import photo from '@/public/4DEA37D4-E0F1-42C4-8DCC-E8E6244C7652.jpg';
+
 
 export default function AboutSection() {
   return (
