@@ -1,0 +1,129 @@
+/* General Styles */
+header {
+    background-color: var(--primary-color);
+    color: var(--primary-foreground-color);
+  }
+  
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  li a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  li a:hover {
+    color: var(--hover-color);
+  }
+  .heroSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 1rem; /* Increased padding for better spacing */
+    background-color: var(--background); /* Use your desired background color */
+    min-height: 100vh; /* Ensure the section takes the full viewport height */
+    width: 100%; /* Ensure it spans the full width */
+  }
+  
+  .heroContent {
+    max-width: 800px;
+    width: 100%; /* Ensure content is responsive */
+  }
+  
+  .heroTitle {
+    font-size: 2.5rem; /* Large title for desktop */
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--primary-text); /* Use a color that contrasts with the background */
+  }
+  
+  .heroSubtitle {
+    font-size: 1.25rem; /* Adjust for better readability */
+    margin-bottom: 2rem;
+    color: var(--secondary-text);
+  }
+  
+  .buttonGroup {
+    display: flex;
+    flex-direction: column; /* Stack buttons on mobile */
+    gap: 1rem; /* Add spacing between buttons */
+    width: 100%; /* Ensure the button group fills the available space */
+    align-items: center; /* Center buttons within the section */
+  }
+  
+  .highlight-button {
+    width: 100%; /* Buttons take full width on smaller screens */
+    max-width: 300px; /* Restrict width on larger screens */
+    padding: 0.75rem 1rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .highlight-button:hover {
+    background-color: var(--button-hover-bg); /* Add hover effect */
+    transform: translateY(-2px); /* Slight lift effect */
+  }
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .heroTitle {
+      font-size: 2rem; /* Reduce font size for mobile */
+    }
+  
+    .heroSubtitle {
+      font-size: 1rem; /* Smaller subtitle on mobile */
+    }
+    .buttonGroup {
+      flex-direction: row; /* Side-by-side buttons for larger screens */
+      justify-content: center; /* Center align buttons */
+    }
+    .highlight-button {
+      width: 100%; /* Buttons take full width on mobile */
+    }
+    .mobile-menu-button {
+      display: inline-block;
+      cursor: pointer;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: inherit;
+    }
+  
+    ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      margin-top: 1rem;
+    }
+  
+    ul.open {
+      display: flex;
+    }
+  
+    li {
+      text-align: center;
+      padding: 0.5rem 0;
+    }
+  }
+  

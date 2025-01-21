@@ -9,13 +9,7 @@ export default function AboutSection() {
     <section className={styles.section}>
       <div className="container">
         <div className={`${styles.grid} ${styles.grid2Cols}`}>
-          <Image
-            src={photo}
-            alt="Your Name"
-            className={styles.profileImage}
-            width={200}
-            height={200}
-          />
+        
           <div className={styles.aboutContent}>
             <h2 className={styles.aboutTitle}>About Me</h2>
             <p className={styles.aboutText}>

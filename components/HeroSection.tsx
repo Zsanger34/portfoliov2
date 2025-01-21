@@ -12,16 +12,14 @@ export default function HeroSection() {
         </p>
         <div className={styles.buttonGroup}>
           <Link href="/journey">
-          <Button variant="secondary" size="lg" className="highlight-button">
-            Explore My Journey
-          </Button>
-
-
+            <Button variant="secondary" size="lg" className={styles.highlightButton}>
+              Explore My Journey
+            </Button>
           </Link>
           <Link href="/resume">
-          <Button variant="secondary" size="lg" className="highlight-button">
-            Explore My Resume
-          </Button>
+            <Button variant="secondary" size="lg" className={styles.highlightButton}>
+              Explore My Resume
+            </Button>
           </Link>
         </div>
       </div>

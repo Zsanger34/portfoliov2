@@ -2,7 +2,7 @@ import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
 import InteractiveElement from '../../components/InteractiveElement'
 import Image from 'next/image'
 import styles from './about.module.css'
-import photo from '@/public/4DEA37D4-E0F1-42C4-8DCC-E8E6244C7652.jpg'
+
 
 export default function About() {
   return (
@@ -12,7 +12,7 @@ export default function About() {
           <div className={`${styles.grid} ${styles.grid2Cols}`}>
             <div>
             <Image
-              src={photo}
+              src="/4DEA37D4-E0F1-42C4-8DCC-E8E6244C7652.jpg"
               alt="Your Name"
               className={styles.profileImage}
               layout="responsive"
@@ -84,20 +84,6 @@ export default function About() {
         </div>
       </section>
 
-      <section className={styles.section}>
-        <div className="container">
-          <h2 className={styles.sectionTitle}>Fun Fact</h2>
-          <Card className="max-w-2xl mx-auto">
-            <CardContent className="pt-6">
-              <p className={styles.aboutText}>
-                Did you know? I once [interesting anecdote or achievement]. This experience taught me [lesson learned], 
-                which I&apos;ve applied to my professional life in [specific way].
-              </p>
-              <InteractiveElement />
-            </CardContent>
-          </Card>
-        </div>
-      </section>
     </>
   )
 }
