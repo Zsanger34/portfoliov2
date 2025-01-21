@@ -1,5 +1,5 @@
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
-import InteractiveElement from '../../components/InteractiveElement'
+
 import Image from 'next/image'
 import styles from './about.module.css'
 
