@@ -27,7 +27,6 @@ export default function Homelab() {
                     <li>Custom pfSense router for advanced networking features</li>
                   </ul>
                 </div>
-                {/* <Image src="/placeholder.svg?height=300&width=400" width={400} height={300} alt="Homelab Setup" className={styles.image} /> */}
               </div>
             </CardContent>
           </Card>
@@ -42,7 +41,6 @@ export default function Homelab() {
             </CardHeader>
             <CardContent>
               <div className={`${styles.grid} ${styles.grid2Cols}`}>
-                {/* <Image src="/placeholder.svg?height=300&width=400" width={400} height={300} alt="Network Diagram" className={styles.image} /> */}
                 <div>
                   <p className={styles.mb4}>
                     My homelab network is designed for security, flexibility, and ease of management:
@@ -118,6 +116,5 @@ export default function Homelab() {
         </div>
       </section>
     </>
-  )
+  );
 }
-

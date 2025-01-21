@@ -1,0 +1,7 @@
+name = "portfoliov2" # Your project name
+main = "./dist/index.js" # Optional if not using Workers
+compatibility_date = "2025-01-20" # Today's date
+
+[site]
+bucket = "./.next/output"
+entry-point = "./"
