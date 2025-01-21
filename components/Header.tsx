@@ -1,5 +1,4 @@
 import Link from "next/link";
-import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
 
 export default function Header() {
   return (
@@ -32,11 +31,6 @@ export default function Header() {
               Journey
             </Link>
           </li>
-          {/* <li>
-            <Link href="/homelab" className="hover:text-secondary">
-              Homelab
-            </Link>
-          </li> */}
           <li>
             <Link href="/fun" className="hover:text-secondary">
               Fun
@@ -45,9 +39,11 @@ export default function Header() {
         </ul>
 
         {/* Mobile Dropdown Menu */}
-        <DropdownMenu.Root>
-          <DropdownMenu.Trigger
-            className="lg:hidden block focus:outline-none text-primary-foreground"
+        <div className="relative lg:hidden">
+          {/* Trigger */}
+          <button
+            id="dropdown-trigger"
+            className="focus:outline-none text-primary-foreground"
             aria-label="Toggle navigation"
           >
             <svg
@@ -64,33 +60,58 @@ export default function Header() {
                 d="M4 6h16M4 12h16M4 18h16"
               ></path>
             </svg>
-          </DropdownMenu.Trigger>
+          </button>
 
-          <DropdownMenu.Content
-            className="bg-primary border border-secondary text-primary-foreground rounded-lg shadow-lg w-40 mt-2 p-2"
-            align="end"
+          {/* Dropdown Content */}
+          <div
+            id="dropdown-content"
+            className="absolute right-0 bg-primary border border-secondary text-primary-foreground rounded-lg shadow-lg w-40 mt-2 p-2 hidden"
           >
-            <DropdownMenu.Item className="hover:bg-secondary hover:text-primary-foreground p-2 rounded">
-              <Link href="/about">About</Link>
-            </DropdownMenu.Item>
-            <DropdownMenu.Item className="hover:bg-secondary hover:text-primary-foreground p-2 rounded">
-              <Link href="/resume">Resume</Link>
-            </DropdownMenu.Item>
-            <DropdownMenu.Item className="hover:bg-secondary hover:text-primary-foreground p-2 rounded">
-              <Link href="/projects">Projects</Link>
-            </DropdownMenu.Item>
-            <DropdownMenu.Item className="hover:bg-secondary hover:text-primary-foreground p-2 rounded">
-              <Link href="/journey">Journey</Link>
-            </DropdownMenu.Item>
-            {/* <DropdownMenu.Item className="hover:bg-secondary hover:text-primary-foreground p-2 rounded">
-              <Link href="/homelab">Homelab</Link>
-            </DropdownMenu.Item> */}
-            <DropdownMenu.Item className="hover:bg-secondary hover:text-primary-foreground p-2 rounded">
-              <Link href="/fun">Fun</Link>
-            </DropdownMenu.Item>
-          </DropdownMenu.Content>
-        </DropdownMenu.Root>
+            <Link href="/about" className="block hover:bg-secondary hover:text-primary-foreground p-2 rounded">
+              About
+            </Link>
+            <Link href="/resume" className="block hover:bg-secondary hover:text-primary-foreground p-2 rounded">
+              Resume
+            </Link>
+            <Link href="/projects" className="block hover:bg-secondary hover:text-primary-foreground p-2 rounded">
+              Projects
+            </Link>
+            <Link href="/journey" className="block hover:bg-secondary hover:text-primary-foreground p-2 rounded">
+              Journey
+            </Link>
+            <Link href="/fun" className="block hover:bg-secondary hover:text-primary-foreground p-2 rounded">
+              Fun
+            </Link>
+          </div>
+        </div>
       </nav>
+
+      {/* Vanilla JavaScript for Dropdown */}
+      <script>
+        {`
+          // Wait for the DOM to load
+          document.addEventListener('DOMContentLoaded', function () {
+            const dropdownTrigger = document.getElementById('dropdown-trigger');
+            const dropdownContent = document.getElementById('dropdown-content');
+
+            let isDropdownOpen = false;
+
+            // Toggle dropdown on click
+            dropdownTrigger.addEventListener('click', function () {
+              isDropdownOpen = !isDropdownOpen;
+              dropdownContent.style.display = isDropdownOpen ? 'block' : 'none';
+            });
+
+            // Close dropdown on scroll
+            window.addEventListener('scroll', function () {
+              if (isDropdownOpen) {
+                isDropdownOpen = false;
+                dropdownContent.style.display = 'none';
+              }
+            });
+          });
+        `}
+      </script>
     </header>
   );
 }

@@ -43,6 +43,21 @@ export default function Fun() {
           </Card>
         </div>
       </section>
+      <section className={styles.section}>
+        <div className={styles.content}>
+          <h2 className={styles.title}>My Bucket List</h2>
+          <Card>
+            <CardContent>
+              <ul className={styles.bucketList}>
+                <li>Visit Japan</li>
+                <li>Build a Recipe Book</li>
+                <li>Expand my Homelab</li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
 
       <section className={`${styles.section} bg-muted`}>
         <div className="container">
