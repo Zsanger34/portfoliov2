@@ -1,4 +1,4 @@
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
+
 import styles from './journey.module.css'
 
 export default function Journey() {

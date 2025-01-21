@@ -1,4 +1,4 @@
-import Image from 'next/image'
+
 import styles from './homelab.module.css'
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
 
@@ -69,7 +69,7 @@ export default function Homelab() {
             </CardHeader>
             <CardContent>
               <p className={styles.mb4}>
-                My homelab serves as a practical learning environment. Here are some of the projects I've worked on:
+                My homelab serves as a practical learning environment. Here are some of the projects I&apos;ve worked on:
               </p>
               <ul className={styles.list}>
                 <li>Kubernetes cluster for container orchestration</li>
@@ -87,7 +87,7 @@ export default function Homelab() {
         <div className={styles.container}>
           <Card className={styles.card}>
             <CardHeader>
-              <CardTitle>What I'm Hosting</CardTitle>
+              <CardTitle>What I&apos;m Hosting</CardTitle>
             </CardHeader>
             <CardContent>
               <p className={styles.mb4}>

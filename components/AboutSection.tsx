@@ -20,8 +20,8 @@ export default function AboutSection() {
           <div className={styles.aboutContent}>
             <h2 className={styles.aboutTitle}>About Me</h2>
             <p className={styles.aboutText}>
-              Hi there! I'm Zachary Sanger, a passionate software developer with a love for building and tinkering.
-              When I'm not coding, you can find me experimenting with my homelab or exploring the latest tech trends.
+              Hi there! I&apos;m Zachary Sanger, a passionate software developer with a love for building and tinkering.
+              When I&apos;m not coding, you can find me experimenting with my homelab or exploring the latest tech trends.
             </p>
             <Link href="/about">
               <Button>Learn More</Button>
