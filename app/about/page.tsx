@@ -13,7 +13,7 @@ export default function About() {
             <div>
             <Image
               src="/4DEA37D4-E0F1-42C4-8DCC-E8E6244C7652.jpg"
-              alt="Your Name"
+              alt="Zachary Sanger"
               className={styles.profileImage}
               layout="responsive"
               width={200}
@@ -28,8 +28,11 @@ export default function About() {
                 and since then, I&apos;ve been on an exciting adventure of continuous learning and growth.
               </p>
               <p className={styles.aboutText}>
-                When I&apos;m not coding or tinkering with my homelab, you can find me Snowboarding, Cooking, or Lifting. 
+                When I&apos;m not coding or tinkering with my homelab, you can find me Snowboarding, Cooking, or Lifting.
                 I believe in the power of thinking 3 moves ahead, and I&apos;m always eager to take on new challenges and push the boundaries of what&apos;s possible.
+              </p>
+              <p className={styles.aboutText}>
+                My goal is to build intuitive applications that make life easier and share what I learn along the way.
               </p>
 
             </div>
