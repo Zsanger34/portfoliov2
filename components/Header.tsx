@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="bg-primary text-primary-foreground sticky top-0 z-50 w-full">
-      <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
+    <header className="bg-primary/80 backdrop-blur-lg text-primary-foreground sticky top-0 z-50 w-full">
+      <nav className="container mx-auto px-4 py-3 flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="text-2xl font-bold">
           Zachary Sanger
@@ -65,7 +65,7 @@ export default function Header() {
           {/* Dropdown Content */}
           <div
             id="dropdown-content"
-            className="absolute right-0 bg-primary border border-secondary text-primary-foreground rounded-lg shadow-lg w-40 mt-2 p-2 hidden"
+            className="absolute right-0 bg-primary/90 border border-secondary text-primary-foreground rounded-lg shadow-lg w-40 mt-2 p-2 hidden"
           >
             <Link href="/about" className="block hover:bg-secondary hover:text-primary-foreground p-2 rounded">
               About
@@ -102,9 +102,19 @@ export default function Header() {
               dropdownContent.style.display = isDropdownOpen ? 'block' : 'none';
             });
 
-            // Close dropdown on scroll
+            // Close dropdown on scroll or outside click
             window.addEventListener('scroll', function () {
               if (isDropdownOpen) {
+                isDropdownOpen = false;
+                dropdownContent.style.display = 'none';
+              }
+            });
+            document.addEventListener('click', function (event) {
+              if (
+                isDropdownOpen &&
+                !dropdownTrigger.contains(event.target as Node) &&
+                !dropdownContent.contains(event.target as Node)
+              ) {
                 isDropdownOpen = false;
                 dropdownContent.style.display = 'none';
               }

@@ -8,8 +8,8 @@ import Footer from '../components/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Zachary Sanger - Resume',
-  description: 'Personal website showcasing skills, projects, and personality',
+  title: 'Zachary Sanger - Professional Portfolio',
+  description: 'Showcasing projects, experience and my journey in tech',
 }
 
 export default function RootLayout({
@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
       <Head>
-        <title>Zach Sanger - Resume</title>
+        <title>Zach Sanger - Professional Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
         <Header />

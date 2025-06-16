@@ -2,6 +2,16 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+This project requires **Node.js 20** or later.
+
+Install the project dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
 First, run the development server:
 
 ```bash

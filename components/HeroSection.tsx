@@ -6,9 +6,9 @@ export default function HeroSection() {
   return (
     <section className={styles.heroSection}>
       <div className={styles.heroContent}>
-        <h1 className={styles.heroTitle}>Planning, Patience, Precision</h1>
+        <h1 className={styles.heroTitle}>Thoughtful Code, Practical Solutions</h1>
         <p className={styles.heroSubtitle}>
-          Software Developer | Homelab Enthusiast | Lifelong Learner
+          Crafting efficient web experiences and sharing my journey
         </p>
         <div className={styles.buttonGroup}>
           <Link href="/journey">
